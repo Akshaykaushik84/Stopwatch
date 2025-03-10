@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.clock-container {
+    margin-top: 50px; /* Space between top of the page and the clock */
+}
+
+label {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;  /* Make buttons round */
+    width: 100px;
+    height: 100px;
+}
+
+#start-btn {
+    background-color: green;
+    color: white;
+}
+
+#start-btn.stop {
+    background-color: red;
+}
+
+#lap-btn {
+    background-color: blue;
+    color: white;
+}
+
+#lap-btn.reset {
+    background-color: orange;
+}
+
+.laps-container {
+    margin-top: 30px; /* Space between the clock and the laps section */
+    max-height: 300px; /* Set the maximum height for the laps container */
+    overflow-y: auto; /* Allow scrolling if content exceeds the container height */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #444;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
